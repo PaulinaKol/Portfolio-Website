@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45a2dcf805.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Paulina</span><br>Kolondra From Poland</h1>
+        </div>
+    </div>
+</div>
+<!-------------about----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Paulina, an enthusiastic and aspiring programmer 
+                   with a deep interest in the dynamic field of web design,
+                   specifically focusing on UX/UI. I have experience in creating
+                   BPMN, functional decomposition, user stories, preparing 
+                   projects in the Figma application, as well as project plans
+                   in the Trello application. My journey in the world of technology
+                   is fueled by a relentless pursuit of excellence, characterized
+                   by a high level of ambition, and an unwavering commitment 
+                   to continuous development.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Functional Decomposition</span><br>Creating a Functional Decomposition</li>
+                        <li><span>BPMN</span><br>Creating Business Process Model and Notation</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>UI/UX Designer at CXM Tech Services.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Computer Science Studies at Collegium da Vinci<br>
+                            <br>Practical skills acquisition in the field of emerging <br>technologies: programming, artificial intelligence,<br>computer networks and WEBdesign.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------- -----------services------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>With a keen eye for aesthetics and a focus on user experience, I am dedicated to creating visually appealing and functional websites that leave a lasting impression.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>I am committed to crafting seamless and engaging digital experiences. Leveraging a thoughtful approach to user interface and experience design, my goal is to create products that not only look great but also provide a user-friendly and intuitive journey.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>I specialize in creating intuitive and visually compelling mobile applications. My approach combines functionality with an aesthetically pleasing design, ensuring a seamless and delightful user experience. I am dedicated to bringing innovative and user-friendly app designs to life.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------portfolio--------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.jpg">
+                <div class="layer">
+                    <h3>Functional Decomposition</h3>
+                    <p>Sample functional decomposition for a LinkedIn application.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1GcG8eLHO3OjKeWypjwKZB1axAdASCrTc/view?pli=1"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.jpg">
+                <div class="layer">
+                    <h3>Business Process Model and Notation</h3>
+                    <p>Sample BPMN for Empik application.</p>
+                    <a href="https://drive.google.com/file/d/11a1GpGFpX-oWdSDVB73ReKgYbHN4ePgZ/view"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.jpg">
+                <div class="layer">
+                    <h3>Online Bank App</h3>
+                    <p>The UX/UI Design for a Bank application.</p>
+                    <a href="https://www.figma.com/file/cdvKfTHrhSQxCltN3HIBTb/Aplikacja-banku-Mone?type=design&node-id=42-574&mode=design"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1aQ5T-Y5gyhECch_DKsaaxfPfWmhRUiCu?usp=drive_link" class="btn">See more</a>
+    </div>
+</div>
+<!-------------contact------------- -->    
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>paulina.kolondra@tlen.pl</p>
+                <p><i class="fa-solid fa-square-phone"></i>(+48) 723 773 717</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/Paulinka.Kolondra/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/paulina.kolondra/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/PAULINA_KOLONDRA_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="contact-me">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Paulina Kolondra</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby77SU3_Fu_cYzrnt-9dAo73wuSsZvj3OC4oPikIix_0pIm0cnfELITMik0ER0ZD6-9/exec'
+    const form = document.forms['contact-me']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+</body>
+</html>
